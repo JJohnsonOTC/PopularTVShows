@@ -11,7 +11,7 @@
     <div id="app">
         <!-- vue Header component-->
         <Header theTitle="POPULAR TV SHOWS" />
-        <div class="row justify-content-between" id="tv-content">
+        <div class="row justify-content-between container" id="tv-content">
             <!-- cue Card component, binds prop aCard to cards in the array "cards"
                 it is then spliced to return 4 cards from the TMDB API-->
             <Card v-for="card in cards.slice(0,4)" v-bind:aCard=card :key="card.id" />
